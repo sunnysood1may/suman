@@ -1,0 +1,337 @@
+
+/*Select Styles*/
+
+.clear {
+    clear: both;
+}
+
+h1 {
+    text-align: center;
+    font-size: 22px;
+    color: white;
+}
+
+.select-wrapper {
+    position: relative;
+    width: 100px;
+}
+
+/*// Dropdown icon*/
+.select-wrapper::after {
+    color: black;
+    content: '▾';
+    margin-right: 10px;
+    pointer-events: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+}
+
+/*// Default state*/
+.dataTables_length select {
+    cursor: pointer;
+}
+
+.select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: rgba(159, 162, 215, 0.52);
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    /*font-size: 18px;*/
+}
+
+.select:focus {
+    color: #444;
+}
+
+/*// Hack for IE 11+*/
+.select::-ms-expand {
+    display: none;
+}
+
+/*End Select Styles*/
+
+
+/*Responsive Table*/
+#sessionsNotStyledList {
+    padding: 0 10px;
+}
+
+.table-filter-column thead{
+    background: linear-gradient(141deg, #9FA2D75C 0%, #9FA2D773 51%, #9FA2D7 75%);
+}
+
+/*a{*/
+    /*color: dodgerblue !important;*/
+    /*font-weight: bold;*/
+/*}*/
+
+/*Filters table*/
+
+.container-filter-button{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    padding: 15px 0;
+}
+
+thead input {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: transparent;
+}
+
+.dataTables_filter input{
+    border-radius: 5px;
+}
+
+.table-filter-column thead:nth-child(1) > tr:nth-child(2), .field-container.assigned-stylist, .field-container.more-options, .field-container.styling-history
+{
+    display: none;
+}
+
+.d-contents{
+    display: contents !important;
+}
+
+.label-filter, .search-input{
+    font-weight: normal !important;
+}
+
+.search-input{
+    font-style: italic;
+}
+
+.field-container {
+    position: relative;
+    border: 1px solid #bcbaba;
+    height: 40px;
+    width: 100%;
+    padding-left: 5px;
+    background: #fff;
+}
+
+.field-placeholder {
+    position: absolute;
+    top: 50%;
+    transform: translate(5px, -50%);
+    pointer-events: none;
+    transition: all 0.14s ease-in-out;
+    font-size: 18px;
+    color: #adadad;
+}
+
+input[type="text"].field-input {
+    color: #000;
+    border: none;
+    padding: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    bottom: 0px;
+}
+input[type="text"].field-input:focus {
+    outline: none;
+}
+input[type="text"].field-input.c-fix, input[type="text"].field-input:focus, input[type="text"].field-input:not(:placeholder-shown) {
+    border-color: transparent;
+}
+input[type="text"].field-input.c-fix ~ label, input[type="text"].field-input:focus ~ label, input[type="text"].field-input:not(:placeholder-shown) ~ label {
+    color: #646669;
+    font-size: 11px;
+    top: calc(10% - 0.5rem);
+    transform: translate(5px, 0%);
+}
+input[type="text"].field-input::-webkit-input-placeholder {
+    color: transparent;
+}
+input[type="text"].field-input::-moz-placeholder {
+    color: transparent;
+}
+input[type="text"].field-input:-ms-input-placeholder {
+    color: transparent;
+}
+
+input[type="search"]{
+    height: 50px;
+    border-radius: 0;
+    border: 1px solid #bcbaba;
+    padding: 10px;
+}
+
+/*Ends Filters table*/
+
+/*End Responsive Table*/
+
+.d-none{
+    display: none !important;
+}
+
+/*Modal*/
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-history-table{
+    width: 100%;
+    padding: 30px;
+}
+
+.modal-body{
+    max-height: 500px;
+    height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.modal-body b{
+    width: 30%;
+}
+
+/*EndsModal*/
+
+.copywrite{
+    max-width: 100%;
+}
+
+table.dataTable th, table.dataTable td{
+    border: none !important;
+}
+
+body{
+    overflow-x: hidden;
+}
+table {
+    width: 100% !important;
+}
+td, th {
+    padding: 6px !important;
+}
+
+
+::before, ::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter{
+    text-align: left !important;
+}
+
+
+.dataTables_length,.dataTables_filter, #container_botton_filter{
+    padding: 10px 0;
+}
+#sessionsNotStyledList{
+    padding: 20px;
+}
+
+input, button, select, textarea, .field-container{
+    border-radius: 5px !important;
+    border: 1px solid #adadad;
+}
+
+input[type="search"]{
+    margin: 0 !important;
+}
+
+.dataTables_length{
+    width: 100%;
+}
+
+/*@media screen and (min-width: 641px) {*/
+    /*.dataTables_filter{*/
+        /*position: absolute;*/
+        /*right: 40px;*/
+        /*top: 40px;*/
+    /*}*/
+/*}*/
+
+.dataTables_filter > label{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+#show_hide_filter{
+    width: 100px;
+}
+
+#menu{
+    padding: 0 !important;
+}
+
+#mydatatable tfoot input{
+    width: 100% !important;
+}
+#mydatatable tfoot input::placeholder{
+    color: #051321;
+}
+#mydatatable tfoot input{
+    background: #F5F5F5;
+    border: #051321;
+}
+#mydatatable tfoot {
+    display: table-header-group !important;
+    background: #fff;
+}
+
+.btn-info{
+    background: #3f51b5 !important;
+    border: #3f51b5 !important;
+}
+
+.filter-hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+td.actions{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.btn-info a{
+    color: #fff !important;
+}
+
+.btn-info a:hover, .btn-info:hover, .btn-info:hover a{
+    color: #3f51b5 !important;
+    background: transparent !important;
+}
+
+.btn-info:hover{
+    border: 1px solid #3f51b5 !important;
+}
+
+
+.feader-login{
+    width: 100%;
+    left: 0 !important;
+}
+
+.fieldset-login button[type="submit"]:hover{
+    background: #9FA2D7;
+    color: #fff;
+}
+.fieldset-login button[type="submit"]{
+    border-radius: 50px !important;
+    background: transparent;
+    color: #9FA2D7;
+    border: 1px solid #9FA2D7;
+}
