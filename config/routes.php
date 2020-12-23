@@ -68,11 +68,6 @@ Router::scope('/', function (RouteBuilder $routes) {
      * ...and connect the rest of 'Pages' controller's URLs.
      */
 
-    //$routes->connect('/admin/login', ['controller' => 'FashomUsers', 'action' => 'login']);
-    $routes->connect('/admin/users', ['controller' => 'FashomUsers', 'action' => 'index']);
-    $routes->connect('/admin', ['controller' => 'FashomUsers', 'action' => 'admin']);
-    $routes->connect('/stylist', ['controller' => 'FashomUsers', 'action' => 'stylist']);
-
     /*
      * Connect catchall routes for all controllers.
      *
@@ -94,7 +89,6 @@ Router::scope('/', function (RouteBuilder $routes) {
      */
     $routes->fallbacks(DashedRoute::class);
 });
-
 /*
  * If you need a different set of middleware or none at all,
  * open new scope and define routes there.
@@ -112,6 +106,4 @@ $routes->prefix('Admin', function (RouteBuilder $routes) {
     // have the `'prefix' => 'Admin'` route element added that
     // will be required when generating URLs for these routes
     $routes->fallbacks(DashedRoute::class);	
-	$routes->connect('/login',['controller'=>'Login','action'=>'index']);
-    $routes->connect('/logout',['controller'=>'Login','action'=>'logout']);	
 });
