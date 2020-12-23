@@ -57,7 +57,6 @@ Configure::write('debug',0);
 		'level' => E_ALL & ~E_DEPRECATED,
 		'trace' => true
 	));
-
 /**
  * Configure the Exception handler used for uncaught exceptions. By default,
  * ErrorHandler::handleException() is used. It will display a HTML page for the exception, and
