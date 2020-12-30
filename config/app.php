@@ -275,7 +275,7 @@ return [
              */
             'username' => env('DB_USERNAME', 'root'),
             'password' => env('DB_PASSWORD', ''),
-            'database' => env('DB_DATABASE', 'fashom'),
+            'database' => env('DB_DATABASE', 'test'),
             /*
              * You do not need to set this flag to use full utf-8 encoding (internal default since CakePHP 3.6).
              */
